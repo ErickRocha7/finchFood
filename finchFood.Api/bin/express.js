@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const variable = require('../bin/configuration/variables');
+const variables = require('../bin/configuration/variables');
 
 //routers
 const categoriaRouter = require('../routes/categoria-router');
@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 //configurando a conexao com banco de dados
+//mongoose.connect(variables.Database.connection, {useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 mongoose.connect(variables.Database.connection);
 
 //configurando as rotas
