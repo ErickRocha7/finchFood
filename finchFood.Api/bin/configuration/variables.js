@@ -4,9 +4,9 @@ const variables = {
     },
     Database: {
         connection: process.env.connection || 'mongodb+srv://finchfoodadmin:banco123@finchfood.3hmva.mongodb.net/finchFood?retryWrites=true&w=majority'
-    }
+    },
     Security: {
-        secretyKey: 'd41d8cd98f00b204e9800998ecf8427e|7aef61337bcee2fe773aa78b40afacbc'
+        secretyKey: 'd41d8cd98f00b204e9800998ecf8427e'
     }
 }
 module.exports = variables;
