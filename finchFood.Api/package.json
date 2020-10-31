@@ -2,8 +2,9 @@
   "name": "finchfood.api",
   "version": "1.0.0",
   "description": "API feita em nodeJs para utilização do nosso aplicativo finchFood",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Erick de Lima Rocha",
