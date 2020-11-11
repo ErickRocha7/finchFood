@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'meus-pedidos',
     loadChildren: () => import('./meus-pedidos/meus-pedidos.module').then( m => m.MeusPedidosPageModule)
   },
+  {
+    path: 'minha-conta',
+    loadChildren: () => import('./minha-conta/minha-conta.module').then( m => m.MinhaContaPageModule)
+  },
 ];
 
 @NgModule({
